@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8"/>
+		<title>index2.html</title>
+		<style type="text/css">
+		body{
+			background-image: url('images/pic.jpg');
+			background-repeat: repeat;
+			background-position: top;
+			text-align: justify;
+			text-indent: 10px;
+		}
+		#wrap{width: 960px; margin: 0 auto; background-image: url('images/pic.jpg');}
+		#header{
+			width: 960px; height: 100px; background-color: #FFDF40;
+			border-bottom: 2px solid #FFEB73;
+			-moz-border-radius-topleft: 15px;
+			-moz-border-radius-topright: 15px;
+			border-radius: 15px 15px 0 0;
+		}
+		#header_top {height: 100px;}
+		#header_left{
+			width: 500px; float: left; display: inline; color: #A68A00;
+			padding: 10px; height: 80px;
+		}
+		#line {width: 960px; height: 5px; background-color: #FFD500;}
+
+		#navbar {width: 960px; height: 40px; background-color: #BFA730;}
+		#navbar ul{margin: 2px; padding: 2px;}
+		#navbar ul li{float: left; list-style-type: none;}
+		#navbar ul li a{
+		 		color: #D2006B; /*navber의 텍스트 색깔*/
+		 		background-color: #FFEB73;
+		 		display: block;
+		 		width: 100px; /* navbar 안의 링크의 넓이 */
+		 		text-align: center;
+		 		padding: 2px 12px;
+		 		font: bold 14px/30px Tahoma;
+		 		text-decoration: none;
+		 		margin-right: 3px;
+		 		margin-bottom: 8px;
+
+		}
+		#navbar ul li a.selected {background-color: #FFF200;}
+		#navbar ul li a:hover{background-color: #3CC;}
+		#content{overflow: auto; padding: 0}
+		#main_content{width: 800px; float: left; padding: 10px;}
+		 #main_content div.section_2{
+		 	width: 800px;
+		 	margin-bottom: 20px;
+		 	border: 1px dashed #FFD500;
+		 	border-top: none;
+		 	-moz-border-radius: 5px;
+		 	overflow: auto;
+		 }
+		 #main_content div.section_2 h2{
+		 	width: 750px;
+		 	padding: 10px 6px 4px 44px;
+		 	margin-top: 0;
+		 	background: #FFD500;
+		 	-moz-border-radius-topleft: 5px;
+		 	-moz-border-radius-topright: 5px;
+		 	border-radius: 5px 5px 0 0;
+		 }
+		</style>
+	</head>	
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div id="header_top">
+					<div id="header_left">
+						<h1 > 자기 소개서 </h1>  
+					</div>	
+				</div>	
+				<div id="line"> </div>
+				<div id="navbar">
+					<ul>
+						<li> <a href="index.html"> 자기소개란 </a> </li>
+						<li> <a href="index2.html"> 장래희망 </a> </li>
+						<li> <a href="index3.html"> 설문조사 </a> </li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<div id="main_content">
+					<div class="section_2" id="dreamJob">
+					<h2> 장래희망</h2>
+						<div class="comment">
+							<span style="font-size:14pt">
+							제 장래희망은 스마트 폰을 가진 모든 사람들이 하는 <b>게임</b>을 만드는 것입니다.
+							</span>
+							<ul style="line-height:200%;">
+							<li>이유 : 저는 어렷을 때부터 게임을 좋아했는데 나이가 들면서 컴퓨터 게임이 점점 시들시들 해지고 집에서만 할 수 있기 때문에 집에 늦게 들어가면서 자연스럽게 안하게 되었습니다. 그런데 어느 순간 스마트 폰이 나타나서 실시간으로 게임에 접속할 수 있게되었다. 지금은 누구나 	게임을 즐길수 있기 때문에 누구에게 사랑받는 게임을 만들고 싶다. </li>
+							<li>다니고싶은 회사 : 컴투스이다. 이유는 제가 가장 좋아하는 게임을 만든 회사이기도 하지만 게임의 업데이트가 다른 게임보다 빠르고 이벤트도 많이 진행을 해서 유저들이 게임을 할도록 만들기 때문입니다. </li>
+							<li>좋아하는 게임 : 타이니팜</li>
+							</ul>
+							<img src="images/1340242363298.jpg" alt="타이니팜">	
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

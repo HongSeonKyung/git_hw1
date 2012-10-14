@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8"/>
+		<title>index.html</title>
+		<style type="text/css">
+		body{
+			background-image: url('images/pic.jpg');
+			background-repeat: repeat;
+			background-position: top;
+			text-align: left;
+			text-indent: 10px;
+		}
+		#wrap{width: 960px; margin: 0 auto; background-image: url('images/pic.jpg');}
+
+		#header{
+			width: 960px; height: 100px; background-color: #FFDF40;
+			border-bottom: 2px solid #FFEB73;
+			-moz-border-radius-topleft: 15px;
+			-moz-border-radius-topright: 15px;
+			border-radius: 15px 15px 0 0;
+		}
+		#header_top {height: 100px;}
+		#header_left{
+			width: 500px; float: left; display: inline; color: #A68A00;
+			padding: 10px; height: 80px;
+		}
+		#line {width: 960px; height: 5px; background-color: #FFD500;}
+
+		 #navbar {width: 960px; height: 40px; background-color: #BFA730;}
+		 #navbar ul{margin: 2px; padding: 2px;}
+		 #navbar ul li{float: left; list-style-type: none;}
+		 #navbar ul li a{
+		 		color: #D2006B; /*navber의 텍스트 색깔*/
+		 		background-color: #FFEB73;
+		 		display: block;
+		 		width: 100px; /* navbar 안의 링크의 넓이 */
+		 		text-align: center;
+		 		padding: 2px 12px;
+		 		font: bold 14px/30px Tahoma;
+		 		text-decoration: none;
+		 		margin-right: 3px;
+		 		margin-bottom: 8px;
+		 }
+		 #navbar ul li a.selected {background-color: #FFF200;}
+		 #navbar ul li a:hover{background-color: #3CC;}
+		#content{overflow: auto; padding: 0}
+		#main_content{width: 800px; float: left; padding: 10px;}
+		 #main_content div.section_1{
+		 	width: 800px;
+		 	margin-bottom: 20px;
+		 	border: 1px dashed #FFD500;
+		 	border-top: none;
+		 	-moz-border-radius: 5px;
+		 	overflow: auto;
+		 }
+		 #main_content div.section_1 h2{
+		 	width: 750px;
+		 	padding: 10px 6px 4px 44px;
+		 	margin-top: 0;
+		 	background: #FFD500;
+		 	-moz-border-radius-topleft: 5px;
+		 	-moz-border-radius-topright: 5px;
+		 	border-radius: 5px 5px 0 0;
+		 }
+		</style>	
+	</head>	
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div id="header_top">
+					<div id="header_left">
+						<h1> 자기 소개서 </h1>
+					</div>
+				</div>
+				<div id="line"> </div>		
+				<div id="navbar">
+					<ul>
+						<li> <a href="index.html"> 자기소개란 </a> </li>
+						<li> <a href="index2.html"> 장래희망 </a> </li>
+						<li> <a href="index3.html"> 설문조사 </a> </li>
+					</ul>
+				</div>
+			</div>	
+			<div id="content">
+				<div id="main_content">
+					<div class="section_1" id="introduce">
+					<h2> 자기 소개란 </h2>
+						<div class="comment">
+						안녕하세요. 제 이름은 <b>홍선경</b>입니다.
+						<br/>저는 현재 명지대학교 컴퓨터공학과 2학년입니다. 
+						<br/>간단하게 제 프로필을 보여드리겠습니다.
+						</div>
+						<br/>
+						<img src="images/20120727173633.jpg" alt="내사진">
+						<ol style="font-size:14pt;">
+						<li> 출생 : 1991년 1월 4일  </li>
+						<li> 신체 : 키 - 165cm,  몸무게 - <b style = "color:red"> secret </b> </li> 
+						<li> 가족 : 아버지, 어머니, 동생(군복무) </li>
+						<li> 학력 
+							<ul> 
+							<li> 서울서정초등학교</li>
+							<li> 목동중학교</li>
+							<li> 진명여자고등학교</li>	
+							<li> 명지대학교</li>
+							</ul> 
+						</li>
+						<li> 스터디 : 명지대학교 스터디 OS </li> 
+						<li> 취미생활 : 영화보기, 스마트폰 게임, 맛집찾아다니기</li> 
+						<li> 가장 존경하는 인물 : 세종대왕  </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>	
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+		<meta charset="utf-8"/>
+		<title>index3.html</title>
+		<style type="text/css">
+		body{
+			background-image: url('images/pic.jpg');
+			background-repeat: repeat;
+			background-position: top;
+			text-align: justify;
+			text-indent: 10px;
+		}
+		#wrap{width: 960px; margin: 0 auto; background-image: url('images/pic.jpg');}
+		#header{
+			width: 960px; height: 100px; background-color: #FFDF40;
+			border-bottom: 2px solid #FFEB73;
+			-moz-border-radius-topleft: 15px;
+			-moz-border-radius-topright: 15px;
+			border-radius: 15px 15px 0 0;
+		}
+		#header_top {height: 100px;}
+		#header_left{
+			width: 500px; float: left; display: inline; color: #A68A00;
+			padding: 10px; height: 80px;
+		}
+		#line {width: 960px; height: 5px; background-color: #FFD500;}
+
+		#navbar {width: 960px; height: 40px; background-color: #BFA730;}
+		#navbar ul{margin: 2px; padding: 2px;}
+		#navbar ul li{float: left; list-style-type: none;}
+		#navbar ul li a{
+		 		color: #D2006B; /*navber의 텍스트 색깔*/
+		 		background-color: #FFEB73;
+		 		display: block;
+		 		width: 100px; /* navbar 안의 링크의 넓이 */
+		 		text-align: center;
+		 		padding: 2px 12px;
+		 		font: bold 14px/30px Tahoma;
+		 		text-decoration: none;
+		 		margin-right: 3px;
+		 		margin-bottom: 8px;
+
+		}
+		#navbar ul li a.selected {background-color: #FFF200;}
+		#navbar ul li a:hover{background-color: #3CC;}
+		#content{overflow: auto; padding: 0}
+		#main_content{width: 800px; float: left; padding: 10px;}
+		#main_content div.section_3{
+		 	width: 800px;
+		 	margin-bottom: 20px;
+		 	border: 1px dashed #FFD500;
+		 	border-top: none;
+		 	-moz-border-radius: 5px;
+		 	overflow: auto;
+		 }
+		#main_content div.section_3 h2{
+		 	width: 750px;
+		 	padding: 10px 6px 4px 44px;
+		 	margin-top: 0;
+		 	background: #FFD500;
+		 	-moz-border-radius-topleft: 5px;
+		 	-moz-border-radius-topright: 5px;
+		 	border-radius: 5px 5px 0 0;
+		 }
+		</style>
+	</head>	
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div id="header_top">
+					<div id="header_left">
+						<h1 > 자기 소개서 </h1>
+					</div> 	 
+				</div>	 
+				<div id="line"></div>
+				<div id="navbar">
+					<ul>
+					<li> <a href="index.html"> 자기소개란 </a> </li>
+					<li> <a href="index2.html"> 장래희망 </a> </li>
+					<li> <a href="index3.html"> 설문조사 </a> </li>
+					</ul>
+				</div>
+			</div>			
+			<div id="content">
+				<div id="main_content">
+					<div class="section_3" id="survey">
+					<h2> 홍선경에 대한 설문조사 </h2>
+					<form action="#" method="post">
+						<div class="comment">
+							<ol>
+								<li>나의 첫인상은 어떤가?
+									<br/>
+									<input type="radio" name="firstimpression" value="verynice"/> 매우 괜찮다.
+									<input type="radio" name="firstimpression" value="normal"/> 평범했다.
+									<input type="radio" name="firstimpression" value="bad"/> 좋지않았다.<br/><br/>
+								</li>
+								<li> 일을 잘할거 같은가?
+									<br/>
+									<input type="radio" name="ability" value="good"/> 그렇다.
+									<input type="radio" name="ability" value="bad"/> 그렇지않다.<br/><br/>
+								</li>
+								<li> 자신감 있어 보이는가?
+	 								<br/>
+ 									<input type="radio" name="confidence" value="good"/> 그렇다.
+ 									<input type="radio" name="confidence" value="bad"/> 그렇지않다.<br/><br/>
+								</li>
+								<li>성격은 좋아보이는가?
+									<br/>
+									<input type="radio" name="character" value="verynice"/> 그렇다.
+									<input type="radio" name="character" value="bad"/> 그렇지않다.<br/><br/>
+								</li>
+								<li> 우리 회사에 꼭 취직했으면 좋겠다.
+									<br/>
+									<input type="radio" name="hire" value="okay"/> 그렇다.
+									<input type="radio" name="hire" value="notokay"/> 그렇지않다.<br/><br/>
+								</li>
+								<li>5번에서 '그렇지 않다'를 선택한 경우 그 이유는?
+									<br/>
+									<input type="checkbox" name="reason" value="impression"/> 인상이 좋아 보이지 않는다.
+									<br/>
+									<input type="checkbox" name="reason" value="face"/> 관상이 별로다.
+									<br/>
+									<input type="checkbox" name="reason" value="character"/> 소심해보인다.
+									<br/>
+									<input type="checkbox" name="reason" value="ability"/> 능력이 없어보인다.
+									<br/>
+									<input type="checkbox" name="reason" value="lateness"/> 지각을 해서
+									<br/>
+									<input type="checkbox" name="reason" value="talk"/> 말을 더듬는다.<br/><br/>
+								</li>
+								<li> 홍선경에게 남기고 싶은말
+									<br/>
+									<textarea cols="50" rows="7" name="cantalk"></textarea><br/>
+									<input type="submit"/>
+								</li>
+							</ol>
+							<table border="1">
+								<caption>홍선경의 점수</caption>
+								<thead>
+									<tr>
+									<th>점수</th>
+									<th> 각 10점만점 </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<td>첫인상</td>
+									<td>&nbsp;</td>
+									</tr>
+									<tr>
+									<td>성격</td>
+									<td>&nbsp;</td>
+									</tr>
+									<tr>
+									<td>능력</td>
+									<td>&nbsp;</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+									<th>총점</th>
+									<th>&nbsp;</th>
+									</tr>
+								</tfoot>
+								</table>
+						</div>
+					</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</body>
+</html>
